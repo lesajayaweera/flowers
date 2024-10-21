@@ -1634,7 +1634,34 @@ h1 {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+span{
+  background: url(https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-512.png);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: animate 6s linear infinite;
 
+}
+@keyframes animate{
+  0%{
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+    
+  }
+   100%{
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+
+    
+  }
+}
 /* Media Queries para tamaños de pantalla diferentes */
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas pequeñas */
